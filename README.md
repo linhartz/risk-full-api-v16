@@ -1,5 +1,15 @@
-# Starter Kit 7.2 Enterprise — Variant C (clean)
+risk-full-api-v16
+--------------------------
+Clean-architecture FastAPI app.
 
-## Setup
-1. Create project folder and copy files.
-2. Create venv:
+Endpoints (Swagger): /docs
+
+Health:
+ - POST /risk/full
+ - GET /....
+
+Deploy: Railway (dockerfile provided)
+
+Author: linhartz
+
+
