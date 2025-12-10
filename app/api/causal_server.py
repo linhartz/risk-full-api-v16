@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routers.risk_router import router as risk_router
 
 app = FastAPI(
-    title="AIR-NUR-API v13",
+    title="risk-full-api-v16",
     version="13.0",
     description="Full AI risk integration API (HHI + HOPE + NUR + RSZ + Chaotic Risk)"
 )
@@ -30,8 +30,9 @@ app.include_router(risk_router, prefix="/risk", tags=["risk"])
 # -------------------------
 @app.get("/", tags=["default"])
 def root():
-    return {"message": "AIR-NUR-API v13 is running"}
+    return {"message": "risk-full-api-v16 is running"}
 
 @app.get("/health", tags=["health"])
 def health():
     return {"status": "ok"}
+
